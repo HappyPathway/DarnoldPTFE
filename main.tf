@@ -16,7 +16,7 @@ data "terraform_remote_state" "p_tfe_network" {
 // Modules
 module "aws_pes" {
   source  = "app.terraform.io/pTFE/aws-pes/ptfe"
-  version = "1.2.0"
+  version = "1.3.0"
 
   aws_instance_type = "m4.large"
   database_pwd = "${var.aws_pes_database_pwd}"
