@@ -28,5 +28,5 @@ module "aws_pes" {
   ssh_key_name = "tfe-demos-darnold"
   subnet_ids = ["${data.terraform_remote_state.p_tfe_network.public_subnet}"]
   ttl = "-1"
-  vpc_security_group_ids = ["${data.terraform_remote_state.p_tfe_network.admin_sg}"]
+  vpc_security_group_ids = "${data.terraform_remote_state.p_tfe_network.admin_sg}"
 }
