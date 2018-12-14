@@ -7,7 +7,6 @@ variable "aws_pes_database_pwd" {}
 data "terraform_remote_state" "p_tfe_network" {
   backend = "atlas"
   config {
-    address = "app.terraform.io"
     name    = "pTFE/Network"
   }
 }
