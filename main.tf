@@ -14,7 +14,7 @@ module "aws_network" {
 
 module "aws_pes" {
   source  = "app.terraform.io/pTFE/aws-pes/ptfe"
-  version = "1.4.0"
+  version = "1.5.0"
 
   aws_instance_type = "m4.large"
   database_pwd = "${var.aws_pes_database_pwd}"
